@@ -16,7 +16,7 @@ let candidateAnswers = [];
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-  let candidateName = input.question('Enter Candidate Name: ');
+  let candidateName = input.question('Candidate Name: ');
   return candidateName;
 }
 
@@ -24,6 +24,9 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   for (let i = 0; i < 5; i++) {
   candidateAnswers[i] = input.question(String(i + 1) + ") " + questions[i]);
+  console.log("Your Answer: " + candidateAnswers[i]);
+    console.log("Correct Answer: " + correctAnswers[i]);
+    console.log("\n");
   }
 }
 
@@ -33,8 +36,7 @@ function gradeQuiz(candidateAnswers) {
   //console.log("Your Answer: " + candidateAnswer);
   //console.log("Correct Answer: " + correctAnswer);
   for (i = 0; i < 5; i++) {
-    console.log("Your Answer: " + candidateAnswers[i]);
-    console.log("Correct Answer: " + correctAnswers[i]);
+    
   }
 
 
